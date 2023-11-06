@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW E30</title>
+    <style>
+        @keyframes banan {
+        0% {
+          transform: translateY(-100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+        }
+        @keyframes kokos {
+        0% {
+          transform: translateX(-100%);
+          opacity: 0;
+        }
+        100% {
+          transform: translateX(0);
+          opacity: 1;
+        }
+        }
+        *{
+            text-decoration: none;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background: rgb(0,7,18);
+            background: -moz-linear-gradient(0deg, rgba(0,7,18,1) 1%, rgba(0,43,71,1) 100%);
+            background: -webkit-linear-gradient(0deg, rgba(0,7,18,1) 1%, rgba(0,43,71,1) 100%);
+            background: linear-gradient(0deg, rgba(0,7,18,1) 1%, rgba(0,43,71,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000712",endColorstr="#002b47",GradientType=1);
+            width: 100%;
+            min-height: 100vh;
+            font-family: BMW Type Global Pro;
+            color:aliceblue
+        }
+        header{
+            display: flex;
+            width: 100%;
+            height: 840px;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background: url("1.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            font-family: BMW Type Global Pro;
+        }
+        a{
+            color: aliceblue;
+        }
+        t.prvy{
+            color: white;
+            font-size: 6rem;
+            animation-duration: .8s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 0s;
+            animation-name: banan;
+        }
+        t.druhy{
+            color: aliceblue;
+            text-decoration: none;
+            display:block;
+            padding: 5px 10px;
+            background: brown;
+            font-family: Roboto;
+            font-size: 30px;
+            font-weight: 300;
+            transition: ease-out .2s;
+
+        }
+        t.druhy:hover{
+            border-radius: 10px;
+            transform: scale(1.1,1.1);
+        }
+        t.treti{
+            font-family: Roboto;
+            margin-top: -16px;
+            margin-bottom: 15px;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-name: kokos;
+        }
+        .container{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .container .article1{
+            width: 100%;
+            height: 320px;
+            justify-content: center;
+            align-items: center;
+            transition: ease-out .5s;
+        }
+        .container .article1:hover{
+            transform: scale(1.05,1.05);
+            margin-left: 15px;
+        }
+        .container .article2:hover{
+            transform: scale(1.05,1.05);
+            margin-right: 15px;
+        }
+        .container .article2{
+            width: 100%;
+            height: 320px;
+            justify-content: center;
+            align-items: center;
+            transition: ease-out .5s;
+        }
+        .container2{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .container2 .article3{
+            border-radius: 10px;
+            background: rgb(0,7,18);
+            background: -moz-linear-gradient(0deg, rgba(0,7,18,1) 1%, rgba(0,43,71,1) 100%);
+            background: -webkit-linear-gradient(0deg, rgba(0,7,18,1) 1%, rgba(0,43,71,1) 100%);
+            background: linear-gradient(0deg, rgba(0,7,18,1) 1%, rgba(0,43,71,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000712",endColorstr="#002b47",GradientType=1);
+            margin: 20px;
+            width: 100%;
+            height: 1350px;
+            justify-content: center;
+            align-items: center;
+        }
+        .container2 .article4{
+            border-radius: 10px;
+            background: rgb(0,7,18);
+            background: -moz-linear-gradient(0deg, rgba(0,7,18,1) 1%, rgba(0,43,71,1) 100%);
+            background: -webkit-linear-gradient(0deg, rgba(0,7,18,1) 1%, rgba(0,43,71,1) 100%);
+            background: linear-gradient(0deg, rgba(0,7,18,1) 1%, rgba(0,43,71,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000712",endColorstr="#002b47",GradientType=1);
+            margin: 20px;
+            width: 100%;
+            height: 1350px;
+            justify-content: center;
+            align-items: center;
+        }
+        .container2 .article5{
+            border-radius: 10px;
+            background: rgb(0,7,18);
+            background: -moz-linear-gradient(0deg, rgba(0,7,18,1) 1%, rgba(0,43,71,1) 100%);
+            background: -webkit-linear-gradient(0deg, rgba(0,7,18,1) 1%, rgba(0,43,71,1) 100%);
+            background: linear-gradient(0deg, rgba(0,7,18,1) 1%, rgba(0,43,71,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000712",endColorstr="#002b47",GradientType=1);
+            margin: 40px;
+            width: 100%;
+            height: 1350px;
+            justify-content: center;
+            align-items: center;
+        }
+        footer{
+            display: flex;
+            width: 100%;
+            height: 80px;
+            background: rgb(0,22,36);
+            background: -moz-linear-gradient(0deg, rgba(0,22,36,1) 0%, rgba(0,7,18,1) 100%);
+            background: -webkit-linear-gradient(0deg, rgba(0,22,36,1) 0%, rgba(0,7,18,1) 100%);
+            background: linear-gradient(0deg, rgba(0,22,36,1) 0%, rgba(0,7,18,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#001624",endColorstr="#000712",GradientType=1);
+            justify-content: center;
+            align-items: center;
+        }
+        p{
+            font-family: Roboto;
+            font-weight: 300;
+            font-size: 1.2rem;
+        }
+        b.prvy{
+            margin-bottom: 10px;
+            font-size: 3rem;
+            margin-bottom: 5px;
+        }
+        b.druhy{
+            margin-top: -50px ;
+            font-size: 3.4rem;
+        }
+        section{
+            margin: 15px;
+        }
+        .container2 .article3{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            transition: ease-out .4s;
+        }
+        .container2 .article4{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            transition: ease-out .4s;
+        }
+        .container2 .article5{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            transition: ease-out .4s;
+        }
+        .container2 .article3:hover{
+            color: rgb(189, 168, 13);
+        }
+        .container2 .article4:hover{
+            color: crimson;
+        }
+        .container2 .article5:hover{
+            color: rgb(173, 5, 240);
+        }
+        img.galery{
+            margin: 15px;
+            width: 360px;
+            border-radius: 20px;
+            transition: ease-out .2s;
+        }
+        img.galery:hover{
+            transform: scale(1.1,1.1);
+            box-shadow: 0px 0px 10px 15px #0000003a;
+        }
+        img.logo{
+            width: 60px;
+            margin-right: 10px;
+        }
+        @media only screen and (max-width: 980px){
+            *{
+                pointer-events: none;
+            }
+            p{
+                font-size: 1rem;
+            }
+            .container{
+                display: flex;
+                flex-direction: column;
+            }
+            .container2{
+                display: flex;
+                flex-direction: column;
+            }
+            .container2 .article3{
+            background: none;
+            }
+            .container2 .article4{
+            background: none;
+            }
+            .container2 .article5{
+            background: none;
+            }
+        }
+        @media only screen and (max-width: 480px){
+            *{
+                pointer-events: none;
+            }
+            p{
+                font-size: 1rem;
+            }
+            .container{
+                display: flex;
+                flex-direction: column;
+            }
+            .container2{
+                display: flex;
+                flex-direction: column;
+            }
+            body{
+                font-size: 1rem;
+            }
+            .container2 .article3{
+            background: none;
+            }
+            .container2 .article4{
+            background: none;
+            }
+            .container2 .article5{
+            background: none;
+            }
+        }
+    </style>
+</head>       
+<body>
+    <header>
+    <t class="prvy">BMW E30</t>
+    <t class="treti">The masterpiece on four wheels.</t>
+    <t class="druhy"><a href="#sekcia">Galéria</a></t>
+    </header>
+    <div class="container">
+        <article class="article1"><section>
+            <b class="prvy">BMW E30</b>
+            <p>BMW E30 je druhá generácia automobilov strednej triedy radu 3, ktorá bola vyrábaná v rokoch 1982 až 1994 nemeckou automobilkou BMW.
+                Vyrábala sa s pohonom zadných kolies (okrem modelu 325iX s pohonom 4 × 4). Takisto aj vrcholná verzia BMW M3 bola prvýkrát uvedená s generáciou E30.
+                Generácia E30 bola uvedená v roku 1982 a v roku 1990 ju nahradila generácia E36. BMW ale pokračovalo vo výrobe typu kabriolet až do roku 1993 a verzie kombi do 1994.   
+                E30 poháňal rad radových štvorvalcových (BMW M10, BMW M40 a BMW M42) a radových šesťvalcových (BMW M20 a BMW M21) benzínových motorov (okrem dieselového motora M21).
+                BMW E30 M3 bol vybavený vysokootáčkovým 4-valcovým benzínovým motorom (BMW S14) s výkonom 175 kW/238 koní vo svojej finálnej verzii pre Európsky trh.</p>
+        </section></article>
+        <article class="article2"><section>
+            <b class="prvy">Verzia M3</b>
+            <p>Vyrábala ju spoločnosť BMW M GmbH. Táto verzia bola pôvodne určená pre okruhové preteky. Vtedajšie predpisy vyžadovali homologáciu na základe 5 tisícovej série.
+                 Verzia M3 sa dá rozpoznať podľa vyššieho veka kufru, iného sklonu zadného okna, rozšírených blatníkov a spojlerov, avšak niekoľko dielov zdieľala s ostatnými modelmi E30.[2] Pôvodne sa vyrábala z verzie kupé, až ku koncu sa pridal aj kabriolet. V interiéri boli športové sedadlá a volant zdobené logom divízie M. Brzdy pochádzali z radu 5. 5-rýchlostná manuálna prevodovka Getrag 265 mala prvý rýchlostný stupeň doľava k sebe. Neskôr sa objavili vylepšené verzie M3 Evolution I, Evolution II a Sports Evolution, špeciálna edícia Europa Meister a Johnny Ceccoto/Ravaglia.</p>
+        </section</article>
+    </div>
+    <div class="container2" id="sekcia">
+        <article class="article3">
+            <b class="druhy">E30 325iX</b>
+            <a href="2.jpg"><img class="galery" src="2.jpg" alt="obr2"></a>
+            <a href="3.jpg"><img class="galery"src="3.jpg" alt="obr2"></a>
+            <a href="4.jpg"><img class="galery"src="4.jpg" alt="obr2"></a>
+        </article>
+        <article class="article4">
+            <b class="druhy">E30 M3</b>
+            <a href="5.jpg"><img class="galery"src="5.jpg" alt="obr2"></a>
+            <a href="6.jpg"><img class="galery"src="6.jpg" alt="obr2"></a>
+            <a href="7.jpg"><img class="galery"src="7.jpg" alt="obr2"></a>
+        </article>
+        <article class="article5">
+            <b class="druhy">E30 325i</b>
+            <a href="8.jpg"><img class="galery"src="8.jpg" alt="obr2"></a>
+            <a href="9.jpg"><img class="galery"src="9.jpg" alt="obr2"></a>
+            <a href="10.jpg"><img class="galery"src="10.jpg" alt="obr2"></a>
+        </article>
+    </div>
+    <footer><img class="logo" src="11.png" alt="logo">Adam Scerbak</footer>
+</body>
+</html>
